@@ -1,0 +1,817 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="PHILOFLIX — Plataforma digital do componente curricular de Filosofia.">
+    <title>PHILOFLIX | Filosofia</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body class="opening-active">
+
+    <!-- =====================================================
+         ABERTURA — CINCO MOMENTOS
+    ====================================================== -->
+    <section class="opening-screen" id="openingScreen" aria-label="Abertura do PHILOFLIX" aria-live="polite">
+        <button class="skip-opening-button" id="skipOpeningButton" type="button">
+            PULAR ABERTURA
+        </button>
+
+        <div class="opening-brand">
+            <span class="opening-logo"><strong>PHILO</strong>FLIX</span>
+            <span class="opening-brand-line"></span>
+            <p>Uma jornada filosófica em cinco momentos</p>
+        </div>
+
+        <div class="opening-stage">
+            <article class="opening-moment opening-paper-texture active" data-opening-index="0">
+                <div class="opening-texture-layer"></div>
+                <div class="opening-vignette"></div>
+                <div class="opening-moment-content">
+                    <span class="opening-moment-number">01</span>
+                    <div class="opening-symbol-shell" aria-hidden="true">
+                        <span class="opening-book-icon">▤</span>
+                    </div>
+                    <span class="opening-moment-label">PRIMEIRO MOMENTO</span>
+                    <h2>CONTEÚDOS</h2>
+                    <p>Textos, conceitos e caminhos para compreender.</p>
+                </div>
+            </article>
+
+            <article class="opening-moment opening-library-texture" data-opening-index="1">
+                <div class="opening-texture-layer"></div>
+                <div class="opening-library-shadow"></div>
+                <div class="opening-vignette"></div>
+                <div class="opening-moment-content">
+                    <span class="opening-moment-number">02</span>
+                    <div class="opening-symbol-shell opening-dialog-shell" aria-hidden="true">
+                        <span class="dialog-pair">
+                            <i class="dialog-box dialog-box-left"></i>
+                            <i class="dialog-box dialog-box-right"></i>
+                        </span>
+                    </div>
+                    <span class="opening-moment-label">SEGUNDO MOMENTO</span>
+                    <h2>FÓRUM DE DEBATES</h2>
+                    <p>Perguntar, argumentar, ouvir e construir ideias.</p>
+                </div>
+            </article>
+
+            <article class="opening-moment opening-film-texture" data-opening-index="2">
+                <div class="opening-film-grain"></div>
+                <div class="opening-film-scratch scratch-one"></div>
+                <div class="opening-film-scratch scratch-two"></div>
+                <div class="opening-film-scratch scratch-three"></div>
+                <div class="opening-projector-light"></div>
+                <div class="opening-vignette"></div>
+                <div class="opening-moment-content">
+                    <span class="opening-moment-number">03</span>
+                    <div class="opening-symbol-shell opening-video-shell" aria-hidden="true">
+                        <span class="opening-play-icon">▶</span>
+                    </div>
+                    <span class="opening-moment-label">TERCEIRO MOMENTO</span>
+                    <h2>VÍDEOS COMPLEMENTARES</h2>
+                    <p>Imagens, histórias e perspectivas para ampliar o pensamento.</p>
+                </div>
+            </article>
+
+            <article class="opening-moment opening-paper-texture" data-opening-index="3">
+                <div class="opening-texture-layer"></div>
+                <div class="opening-vignette"></div>
+                <div class="opening-moment-content">
+                    <span class="opening-moment-number">04</span>
+                    <div class="opening-symbol-shell opening-activity-shell" aria-hidden="true">
+                        <span class="opening-activity-icon">✓</span>
+                    </div>
+                    <span class="opening-moment-label">QUARTO MOMENTO</span>
+                    <h2>ATIVIDADES</h2>
+                    <p>Investigar, relacionar, experimentar e produzir.</p>
+                </div>
+            </article>
+
+            <article class="opening-moment opening-library-texture" data-opening-index="4">
+                <div class="opening-texture-layer"></div>
+                <div class="opening-library-shadow"></div>
+                <div class="opening-vignette"></div>
+                <div class="opening-moment-content">
+                    <span class="opening-moment-number">05</span>
+                    <div class="opening-symbol-shell opening-more-shell" aria-hidden="true">
+                        <span class="opening-more-icon">✦</span>
+                    </div>
+                    <span class="opening-moment-label">QUINTO MOMENTO</span>
+                    <h2>SAIBA +</h2>
+                    <p>Novas leituras para continuar a jornada.</p>
+                </div>
+            </article>
+
+            <article class="opening-final" id="openingFinal">
+                <div class="opening-final-light"></div>
+                <div class="opening-vignette"></div>
+                <div class="opening-final-content">
+                    <span class="opening-final-label">CINCO CAMINHOS PARA FILOSOFAR</span>
+
+                    <div class="opening-final-icons" aria-hidden="true">
+                        <span class="final-icon">▤</span>
+
+                        <span class="final-dialog-pair">
+                            <i class="dialog-box dialog-box-left"></i>
+                            <i class="dialog-box dialog-box-right"></i>
+                        </span>
+
+                        <span class="final-icon final-video-icon">▶</span>
+                        <span class="final-icon final-activity-icon">✓</span>
+                        <span class="final-icon">✦</span>
+                    </div>
+
+                    <h2>ESCOLHA UM CAMINHO.<br>COMECE A PENSAR.</h2>
+
+                    <p>
+                        Conteúdos, debates, vídeos, atividades e novas leituras
+                        reunidos em uma experiência filosófica.
+                    </p>
+
+                    <button class="enter-philoflix-button" id="enterPhiloflixButton" type="button">
+                        ENTRAR NO PHILOFLIX
+                    </button>
+                </div>
+            </article>
+        </div>
+
+        <div class="opening-progress">
+            <div class="opening-progress-track" aria-label="Progresso da abertura">
+                <span data-progress-index="0">━━━━</span>
+                <span data-progress-index="1">━━━━</span>
+                <span data-progress-index="2">━━━━</span>
+                <span data-progress-index="3">━━━━</span>
+                <span data-progress-index="4">━━━━</span>
+            </div>
+            <p id="openingProgressText">Momento 1 de 5</p>
+        </div>
+    </section>
+
+    <!-- =====================================================
+         CABEÇALHO
+    ====================================================== -->
+    <header class="topbar" id="topbar">
+        <div class="topbar-content">
+            <div class="topbar-left">
+                <button
+                    class="mobile-menu-button"
+                    id="mobileMenuButton"
+                    type="button"
+                    aria-label="Abrir menu"
+                    aria-expanded="false"
+                >
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+
+                <button class="logo-button" id="logoButton" type="button" aria-label="Voltar ao início">
+                    <span>PHILO</span>FLIX
+                </button>
+
+                <nav class="main-navigation" id="mainNavigation" aria-label="Menu principal">
+                    <button type="button" data-navigation="inicio">Início</button>
+                    <button type="button" data-navigation="mito-filosofia">Mito e Filosofia</button>
+                    <button type="button" data-navigation="teoria-conhecimento">Conhecimento</button>
+                    <button type="button" data-navigation="etica">Ética</button>
+                    <button type="button" data-navigation="filosofia-politica">Política</button>
+                    <button type="button" data-navigation="filosofia-ciencia">Ciência</button>
+                    <button type="button" data-navigation="estetica">Estética</button>
+                </nav>
+            </div>
+
+            <div class="topbar-right">
+                <div class="search-area" id="searchArea">
+                    <button class="search-button" id="searchButton" type="button" aria-label="Abrir pesquisa">
+                        <span class="search-icon"></span>
+                    </button>
+
+                    <input
+                        type="search"
+                        id="searchInput"
+                        placeholder="Pesquisar conteúdo..."
+                        autocomplete="off"
+                        aria-label="Pesquisar conteúdos"
+                    >
+                </div>
+
+                <span class="profile-avatar" aria-label="Componente curricular de Filosofia">F</span>
+            </div>
+        </div>
+    </header>
+
+    <div class="mobile-menu-overlay" id="mobileMenuOverlay"></div>
+
+    <!-- =====================================================
+         PÁGINA INICIAL
+    ====================================================== -->
+    <main class="home-page" id="homePage">
+        <section class="hero" id="inicio">
+            <div class="hero-decoration">
+                <div class="hero-circle circle-one"></div>
+                <div class="hero-circle circle-two"></div>
+                <div class="hero-circle circle-three"></div>
+                <span class="hero-symbol">Φ</span>
+            </div>
+
+            <div class="hero-overlay"></div>
+
+            <div class="hero-content">
+                <span class="hero-label">PLATAFORMA DIGITAL DE FILOSOFIA</span>
+
+                <h1>
+                    Filosofia para compreender,
+                    <strong>questionar e transformar.</strong>
+                </h1>
+
+                <p>
+                    Explore conteúdos, fóruns de debates, vídeos, atividades e
+                    materiais complementares organizados pelos conteúdos
+                    estruturantes da Filosofia.
+                </p>
+
+                <div class="hero-information">
+                    <span class="classification">LIVRE</span>
+                    <span>6 conteúdos estruturantes</span>
+                    <span>30 ambientes de aprendizagem</span>
+                </div>
+
+                <button class="primary-button" id="exploreButton" type="button">
+                    <span aria-hidden="true">▶</span>
+                    Explorar o roteiro
+                </button>
+            </div>
+        </section>
+
+        <section class="learning-environments" id="learningEnvironments">
+            <header class="general-section-heading">
+                <div>
+                    <span class="section-eyebrow">AMBIENTES DE APRENDIZAGEM</span>
+                    <h2>O que você encontrará</h2>
+                </div>
+
+                <p>
+                    Cada conteúdo estruturante apresenta cinco ambientes organizados
+                    para facilitar o acesso aos materiais. Selecione um ambiente para
+                    conhecer sua página de entrada.
+                </p>
+            </header>
+
+            <div class="environment-grid">
+                <button
+                    class="environment-item environment-cover-card"
+                    id="environmentGatewayConteudos"
+                    type="button"
+                    data-environment-id="conteudos"
+                    data-environment-cover-base="conteudos"
+                    aria-label="Abrir a página de entrada de Conteúdos"
+                >
+                    <span class="environment-cover-media">
+                        <img
+                            class="environment-cover-image"
+                            src=""
+                            alt="Capa da página de entrada de Conteúdos"
+                            loading="lazy"
+                            decoding="async"
+                        >
+                        <span class="environment-cover-fallback" aria-hidden="true">▤</span>
+                        <span class="environment-cover-shade" aria-hidden="true"></span>
+                        <span class="environment-cover-number">01</span>
+                        <span class="environment-cover-icon" aria-hidden="true">▤</span>
+                    </span>
+
+                    <span class="environment-cover-caption">
+                        <span class="environment-cover-text">
+                            <strong>Conteúdos</strong>
+                            <small>Textos, conceitos, explicações e materiais organizados para estudo.</small>
+                        </span>
+                        <span class="environment-access-arrow" aria-hidden="true">→</span>
+                    </span>
+                </button>
+
+                <button
+                    class="environment-item environment-cover-card"
+                    id="environmentGatewayForum"
+                    type="button"
+                    data-environment-id="forum"
+                    data-environment-cover-base="forum"
+                    aria-label="Abrir a página de entrada do Fórum de Debates"
+                >
+                    <span class="environment-cover-media">
+                        <img
+                            class="environment-cover-image"
+                            src=""
+                            alt="Capa da página de entrada do Fórum de Debates"
+                            loading="lazy"
+                            decoding="async"
+                        >
+                        <span class="environment-cover-fallback" aria-hidden="true">
+                            <span class="environment-dialog-pair">
+                                <i class="environment-dialog-one"></i>
+                                <i class="environment-dialog-two"></i>
+                            </span>
+                        </span>
+                        <span class="environment-cover-shade" aria-hidden="true"></span>
+                        <span class="environment-cover-number">02</span>
+                        <span class="environment-cover-icon environment-cover-dialog-icon" aria-hidden="true">
+                            <span class="environment-dialog-pair">
+                                <i class="environment-dialog-one"></i>
+                                <i class="environment-dialog-two"></i>
+                            </span>
+                        </span>
+                    </span>
+
+                    <span class="environment-cover-caption">
+                        <span class="environment-cover-text">
+                            <strong>Fórum</strong>
+                            <small>Espaços de participação, argumentação e debates filosóficos.</small>
+                        </span>
+                        <span class="environment-access-arrow" aria-hidden="true">→</span>
+                    </span>
+                </button>
+
+                <button
+                    class="environment-item environment-cover-card"
+                    id="environmentGatewayVideos"
+                    type="button"
+                    data-environment-id="videos"
+                    data-environment-cover-base="videos"
+                    aria-label="Abrir a página de entrada de Vídeos"
+                >
+                    <span class="environment-cover-media">
+                        <img
+                            class="environment-cover-image"
+                            src=""
+                            alt="Capa da página de entrada de Vídeos"
+                            loading="lazy"
+                            decoding="async"
+                        >
+                        <span class="environment-cover-fallback" aria-hidden="true">▶</span>
+                        <span class="environment-cover-shade" aria-hidden="true"></span>
+                        <span class="environment-cover-number">03</span>
+                        <span class="environment-cover-icon" aria-hidden="true">▶</span>
+                    </span>
+
+                    <span class="environment-cover-caption">
+                        <span class="environment-cover-text">
+                            <strong>Vídeos</strong>
+                            <small>Aulas, explicações, documentários e produções audiovisuais.</small>
+                        </span>
+                        <span class="environment-access-arrow" aria-hidden="true">→</span>
+                    </span>
+                </button>
+
+                <button
+                    class="environment-item environment-cover-card"
+                    id="environmentGatewayAtividades"
+                    type="button"
+                    data-environment-id="atividades"
+                    data-environment-cover-base="atividades"
+                    aria-label="Abrir a página de entrada de Atividades"
+                >
+                    <span class="environment-cover-media">
+                        <img
+                            class="environment-cover-image"
+                            src=""
+                            alt="Capa da página de entrada de Atividades"
+                            loading="lazy"
+                            decoding="async"
+                        >
+                        <span class="environment-cover-fallback environment-cover-fallback-activity" aria-hidden="true">✓</span>
+                        <span class="environment-cover-shade" aria-hidden="true"></span>
+                        <span class="environment-cover-number">04</span>
+                        <span class="environment-cover-icon environment-cover-activity-icon" aria-hidden="true">✓</span>
+                    </span>
+
+                    <span class="environment-cover-caption">
+                        <span class="environment-cover-text">
+                            <strong>Atividades</strong>
+                            <small>Exercícios, desafios e experiências interativas de aprendizagem.</small>
+                        </span>
+                        <span class="environment-access-arrow" aria-hidden="true">→</span>
+                    </span>
+                </button>
+
+                <button
+                    class="environment-item environment-cover-card"
+                    id="environmentGatewaySaibaMais"
+                    type="button"
+                    data-environment-id="saiba-mais"
+                    data-environment-cover-base="saibamais"
+                    aria-label="Abrir a página de entrada de Saiba Mais"
+                >
+                    <span class="environment-cover-media">
+                        <img
+                            class="environment-cover-image"
+                            src=""
+                            alt="Capa da página de entrada de Saiba Mais"
+                            loading="lazy"
+                            decoding="async"
+                        >
+                        <span class="environment-cover-fallback" aria-hidden="true">✦</span>
+                        <span class="environment-cover-shade" aria-hidden="true"></span>
+                        <span class="environment-cover-number">05</span>
+                        <span class="environment-cover-icon" aria-hidden="true">✦</span>
+                    </span>
+
+                    <span class="environment-cover-caption">
+                        <span class="environment-cover-text">
+                            <strong>Saiba Mais</strong>
+                            <small>Biblioteca de leituras e materiais complementares.</small>
+                        </span>
+                        <span class="environment-access-arrow" aria-hidden="true">→</span>
+                    </span>
+                </button>
+            </div>
+        </section>
+
+        <section class="platform-introduction">
+            <div>
+                <span class="section-eyebrow">ROTEIRO PHILOFLIX</span>
+                <h2>Selecione uma capa para acessar a página</h2>
+            </div>
+
+            <div class="platform-introduction-information">
+                <p>
+                    Em cada conteúdo estruturante, as capas seguem a ordem:
+                    Conteúdo, Fórum, Vídeos, Atividades e Saiba Mais.
+                </p>
+
+                <button class="refresh-images-button" id="refreshImagesButton" type="button">
+                    ↻ Verificar novas imagens
+                </button>
+            </div>
+        </section>
+
+        <section class="catalog" id="catalog" aria-label="Roteiro de conteúdos de Filosofia"></section>
+
+        <section class="empty-search" id="emptySearch" aria-live="polite">
+            <span class="empty-search-symbol">?</span>
+            <h2>Nenhuma capa encontrada</h2>
+            <p>Verifique o termo pesquisado ou explore outro conteúdo estruturante.</p>
+            <button type="button" id="clearSearchButton">Limpar pesquisa</button>
+        </section>
+
+        <section class="final-call">
+            <div>
+                <span class="section-eyebrow">PENSAR É O PRIMEIRO PASSO</span>
+                <h2>Toda transformação começa com uma pergunta.</h2>
+                <p>Selecione uma das capas e inicie sua jornada de investigação filosófica.</p>
+                <button type="button" id="finalExploreButton">Acessar o roteiro</button>
+            </div>
+
+            <blockquote>
+                <span aria-hidden="true">“</span>
+                Uma vida sem reflexão não merece ser vivida.
+                <cite>Sócrates</cite>
+            </blockquote>
+        </section>
+    </main>
+
+    <!-- =====================================================
+         PÁGINAS DE ENTRADA DOS CINCO AMBIENTES
+    ====================================================== -->
+    <main class="environment-entry-page" id="environmentEntryPage" hidden>
+        <div class="environment-entry-background" aria-hidden="true">
+            <img
+                class="environment-entry-background-image"
+                id="environmentEntryBackgroundImage"
+                src=""
+                alt=""
+            >
+
+            <div
+                class="environment-entry-background-fallback"
+                id="environmentEntryBackgroundFallback"
+            >
+                <span id="environmentEntryFallbackSymbol">Φ</span>
+                <p id="environmentEntryImageStatus">
+                    A imagem deste ambiente será carregada do repositório.
+                </p>
+            </div>
+        </div>
+
+        <div class="environment-entry-shade" aria-hidden="true"></div>
+
+        <section class="environment-entry-hero">
+            <button
+                class="environment-entry-back-button"
+                id="environmentEntryBackTop"
+                type="button"
+            >
+                <span aria-hidden="true">←</span>
+                VOLTAR AO ROTEIRO
+            </button>
+
+            <div class="environment-entry-hero-content">
+                <span class="environment-entry-number" id="environmentEntryNumber">
+                    AMBIENTE 01
+                </span>
+
+                <div
+                    class="environment-entry-symbol"
+                    id="environmentEntrySymbol"
+                    aria-hidden="true"
+                >
+                    ▤
+                </div>
+
+                <span class="environment-entry-eyebrow">
+                    PORTA DE ENTRADA PHILOFLIX
+                </span>
+
+                <h1 id="environmentEntryTitle">CONTEÚDOS</h1>
+
+                <p id="environmentEntrySubtitle">
+                    Textos, conceitos, explicações e materiais organizados para estudo.
+                </p>
+
+                <button
+                    class="environment-entry-explore-button"
+                    id="environmentEntryExploreButton"
+                    type="button"
+                >
+                    EXPLORAR NOS CONTEÚDOS ESTRUTURANTES
+                    <span aria-hidden="true">↓</span>
+                </button>
+            </div>
+        </section>
+
+        <section class="environment-entry-options" id="environmentEntryOptions">
+            <header class="environment-entry-options-heading">
+                <span id="environmentEntrySectionLabel">CONTEÚDOS NO ROTEIRO</span>
+                <h2>Escolha um conteúdo estruturante</h2>
+                <p id="environmentEntryInstruction">
+                    Selecione uma opção para acessar a página correspondente no roteiro.
+                </p>
+            </header>
+
+            <div class="environment-entry-grid" id="environmentEntryGrid"></div>
+        </section>
+
+        <button
+            class="environment-entry-back-button environment-entry-back-bottom"
+            id="environmentEntryBackBottom"
+            type="button"
+        >
+            <span aria-hidden="true">←</span>
+            VOLTAR AO ROTEIRO
+        </button>
+    </main>
+
+    <!-- =====================================================
+         PÁGINA INTERNA
+    ====================================================== -->
+    <main class="detail-page" id="detailPage" hidden>
+        <!--
+            Fundo de cada página interna.
+            Os arquivos serão procurados na raiz do GitHub:
+            conteudo01 a conteudo06
+            forum01 a forum06
+            video01 a video06
+            atividade01 a atividade06
+            saibamais01 a saibamais06
+
+            Cada página interna reutiliza exatamente a imagem de sua capa.
+            Todos os arquivos são JPG e ficam na raiz do GitHub.
+
+            No computador, a imagem ocupa toda a tela e permanece fixa.
+            O conteúdo e a barra de rolagem passam sobre esse fundo.
+            Em Android e tablet, o fundo acompanha a rolagem.
+        -->
+        <div class="detail-fixed-background" id="detailFixedBackground" aria-hidden="true">
+            <img
+                class="detail-fixed-background-image"
+                id="detailCoverImage"
+                src=""
+                alt=""
+            >
+
+            <div class="detail-fixed-background-fallback" id="detailCoverFallback">
+                <span id="detailFallbackSymbol">Φ</span>
+                <p id="detailImageErrorText">A imagem será disponibilizada em breve.</p>
+            </div>
+        </div>
+
+        <div class="detail-fixed-shade" aria-hidden="true"></div>
+
+        <section class="detail-hero" id="detailHero">
+            <div class="detail-hero-overlay"></div>
+
+            <div class="detail-hero-content">
+                <button class="back-button back-button-top" id="detailBackTop" type="button">
+                    <span aria-hidden="true">←</span>
+                    VOLTAR AO ROTEIRO
+                </button>
+
+                <span class="detail-category" id="detailCategory">FILOSOFIA</span>
+                <span class="detail-type" id="detailType">CONTEÚDO</span>
+
+                <h1 id="detailTitle">Título da página</h1>
+                <p id="detailSubtitle">Descrição do ambiente selecionado.</p>
+
+                <button class="detail-refresh-image" id="detailRefreshImage" type="button" hidden>
+                    ↻ Verificar imagem da capa
+                </button>
+            </div>
+        </section>
+
+        <section class="detail-body">
+            <div id="standardDetailContent">
+                <header class="detail-body-heading">
+                    <span class="page-number" id="detailPageNumber">AMBIENTE 01</span>
+                    <h2 id="detailSectionTitle">Espaço de aprendizagem</h2>
+                    <p id="detailIntroduction">Esta página está preparada para receber os materiais.</p>
+                </header>
+
+                <div class="detail-content-grid" id="detailContentGrid"></div>
+
+                <section class="page-material-area">
+                    <div class="material-heading">
+                        <span>ÁREA DE PUBLICAÇÃO</span>
+                        <h2 id="materialAreaTitle">Materiais da página</h2>
+                        <p id="materialAreaDescription">Utilize este espaço para organizar os conteúdos.</p>
+                    </div>
+
+                    <div class="material-placeholder">
+                        <span class="material-placeholder-icon">+</span>
+                        <h3>Espaço preparado para receber o material</h3>
+                        <p>
+                            Textos, links, vídeos, documentos, atividades, jogos ou
+                            ferramentas poderão ser adicionados aqui.
+                        </p>
+                    </div>
+                </section>
+            </div>
+
+            <!-- =================================================
+                 BIBLIOTECA AUDIOVISUAL
+            ================================================== -->
+            <section class="video-library-section" id="videoLibrarySection" hidden>
+                <header class="video-library-heading">
+                    <span class="page-number">BIBLIOTECA AUDIOVISUAL</span>
+                    <h2>Filmes e produções audiovisuais</h2>
+                    <p>
+                        Selecione uma das capas para acessar a sinopse, a ficha técnica
+                        e, quando houver disponibilização integral autorizada, o vídeo.
+                    </p>
+                </header>
+
+                <div class="video-library-actions">
+                    <span>10 espaços organizados: 8 fichas preenchidas e 2 reservas</span>
+
+                    <button type="button" id="refreshVideoCoversButton">
+                        ↻ Verificar capas dos filmes
+                    </button>
+                </div>
+
+                <div class="video-library-grid" id="videoLibraryGrid"></div>
+
+                <section class="video-experience" id="videoExperience" hidden>
+                    <button class="return-video-library" id="returnVideoLibrary" type="button">
+                        ← RETORNAR À BIBLIOTECA
+                    </button>
+
+                    <div class="video-experience-layout">
+                        <div class="video-player-column">
+                            <div class="video-player" id="videoPlayer">
+                                <iframe
+                                    id="videoIframe"
+                                    src=""
+                                    title="Reprodutor de vídeo"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    allowfullscreen
+                                ></iframe>
+                            </div>
+
+                            <div class="video-unavailable-panel" id="videoUnavailablePanel" hidden>
+                                <span aria-hidden="true">▣</span>
+                                <h3>Ficha técnica disponível</h3>
+                                <p>
+                                    Não foi localizada disponibilização integral confirmada
+                                    em canal público autorizado para esta obra.
+                                </p>
+                            </div>
+
+                            <a
+                                class="youtube-access-button"
+                                id="youtubeAccessButton"
+                                href="#"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                hidden
+                            >
+                                ▶ ABRIR VÍDEO NO YOUTUBE
+                            </a>
+                        </div>
+
+                        <article class="video-information">
+                            <span class="video-information-label" id="selectedVideoCode">
+                                FILME SELECIONADO
+                            </span>
+
+                            <h2 id="selectedVideoTitle">Título do filme</h2>
+
+                            <div class="video-synopsis">
+                                <h3>Sinopse</h3>
+                                <p id="selectedVideoSynopsis">Sinopse do filme.</p>
+                            </div>
+
+                            <div class="technical-information">
+                                <h3>Informações técnicas</h3>
+
+                                <dl>
+                                    <div>
+                                        <dt>Título original</dt>
+                                        <dd id="selectedVideoTechnicalTitle">—</dd>
+                                    </div>
+
+                                    <div>
+                                        <dt>Direção</dt>
+                                        <dd id="selectedVideoDirection">—</dd>
+                                    </div>
+
+                                    <div>
+                                        <dt>Elenco principal</dt>
+                                        <dd id="selectedVideoCast">—</dd>
+                                    </div>
+
+                                    <div>
+                                        <dt>País/Ano de produção</dt>
+                                        <dd id="selectedVideoCountryYear">—</dd>
+                                    </div>
+
+                                    <div id="selectedVideoPedagogicalRow" hidden>
+                                        <dt>Faixa pedagógica PHILOFLIX</dt>
+                                        <dd id="selectedVideoPedagogicalRange">—</dd>
+                                    </div>
+
+                                    <div>
+                                        <dt>Link do vídeo de acesso público</dt>
+                                        <dd id="selectedVideoPublicLink">—</dd>
+                                    </div>
+
+                                    <div>
+                                        <dt>Canal/Plataforma</dt>
+                                        <dd id="selectedVideoChannel">—</dd>
+                                    </div>
+
+                                    <div>
+                                        <dt>Fontes da ficha</dt>
+                                        <dd id="selectedVideoSources">—</dd>
+                                    </div>
+                                </dl>
+                            </div>
+                        </article>
+                    </div>
+                </section>
+            </section>
+
+            <button class="back-button back-button-bottom" id="detailBackBottom" type="button">
+                <span aria-hidden="true">←</span>
+                VOLTAR AO ROTEIRO
+            </button>
+        </section>
+    </main>
+
+    <!-- =====================================================
+         RODAPÉ
+    ====================================================== -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <button class="logo-button footer-logo" id="footerLogoButton" type="button">
+                    <span>PHILO</span>FLIX
+                </button>
+
+                <p>Plataforma educacional destinada ao componente curricular de Filosofia.</p>
+            </div>
+
+            <div class="footer-column">
+                <h3>Conteúdos estruturantes</h3>
+                <button type="button" data-navigation="mito-filosofia">Mito e Filosofia</button>
+                <button type="button" data-navigation="teoria-conhecimento">Teoria do Conhecimento</button>
+                <button type="button" data-navigation="etica">Ética</button>
+            </div>
+
+            <div class="footer-column">
+                <h3>Outras categorias</h3>
+                <button type="button" data-navigation="filosofia-politica">Filosofia Política</button>
+                <button type="button" data-navigation="filosofia-ciencia">Filosofia da Ciência</button>
+                <button type="button" data-navigation="estetica">Estética</button>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© <span id="currentYear"></span> PHILOFLIX.</p>
+            <p>Plataforma educacional de Filosofia.</p>
+        </div>
+    </footer>
+
+    <button class="back-to-top" id="backToTop" type="button" aria-label="Voltar ao topo">↑</button>
+
+    <script src="./script.js"></script>
+</body>
+</html>
